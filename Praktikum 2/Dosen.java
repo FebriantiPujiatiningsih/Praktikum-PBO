@@ -1,3 +1,8 @@
+/* Nama File : Dosen.java
+ * Deskripsi : Berisi atribut dan method dalam class Dosen
+ * Pembuat : Febrianti Pujiatiningsih / 24060123120034
+ * Tanggal : Selasa, 25 Februari 2025 */
+
 public class Dosen {
     /***************ATRIBUT*************/
     private String nip;
