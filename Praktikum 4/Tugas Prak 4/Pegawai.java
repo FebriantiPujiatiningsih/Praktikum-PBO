@@ -16,7 +16,7 @@ public class Pegawai {
     private double gajiPokok;
 
     // Konstruktor
-    public Pegawai(String nip, String nama, String tanggalLahir, String tmt, double gajiPokok) {
+    public Pegawai(String nip, String nama, LocalDate tanggalLahir, LocalDate tmt, double gajiPokok) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         this.nip = nip;
         this.nama = nama;
