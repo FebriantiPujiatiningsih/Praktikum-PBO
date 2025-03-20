@@ -1,3 +1,8 @@
+/* Nama File : Mmain.java
+ * Deskripsi : Berisi aplikasi dan pemanggilan fungsi class Dosen, Mahasiswa, MataKuliah
+ * Pembuat : Febrianti Pujiatiningsih / 24060123120034
+ * Tanggal : Selasa, 25 Februari 2025 */
+
 public class Mmain {
     public static void main(String[] args) {
         Dosen dosen1 = new Dosen("D001", "Dr. Bani", "Informatika");
