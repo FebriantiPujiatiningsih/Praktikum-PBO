@@ -23,9 +23,17 @@ public class DosenTamu extends Dosen {
         return nidk;
     }
 
+    public LocalDate getKontrakBerakhir(){
+        return kontrakBerakhir;
+    }
+
     // Setter
     public void setNidk(String nidk) {
         this.nidk = nidk;
+    }
+
+    public void setKontrakBerakhir(LocalDate kontrakBerakhir){
+        return kontrakBerakhir;
     }
 
     // Method
