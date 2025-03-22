@@ -3,7 +3,8 @@
     Pembuat      : Febrianti Pujiatiningsih / 24060123120034  
     Tanggal      : 18 Maret 2025 */
 
-import java.util.Calendar;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class Petani extends Manusia implements Pajak {
     private String asal_kota;
@@ -38,11 +39,10 @@ public class Petani extends Manusia implements Pajak {
     // Method
     @Override
     public int hitungMasaKerja() {
-        Calendar now = Calendar.getInstance();
-        Calendar mulaiKerja = Calendar.getInstance();
-        mulaiKerja.setTime(gettgl_mulai_kerja());
-
-        return (now.get(Calendar.YEAR) - mulaiKerja.get(Calendar.YEAR)) + C;
+        Date sekarang = new Date();
+        long selisihMiliDetik = sekarang.getTime() - super.gettgl_mulai_kerja().getTime();
+        int tahun = (int) TimeUnit.DAYS.convert(selisihMiliDetik, TimeUnit.MILLISECONDS) / 365;
+        return tahun + C;
     }
 
     @Override
